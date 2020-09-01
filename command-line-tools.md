@@ -12,6 +12,7 @@ I am installing command line tools in $HOME directory but it is not mandatory
 
 `cd cmdline-tools`
 
+---------------------------
 **sdkmanager lives inside** `cmdline-tools/tools/bin`
 
 
@@ -29,6 +30,7 @@ Because later, when updating Android SDK, or installing more packages,
 the other packages will be placed under `ANDROID_HOME`, but not under `cmdline-tools`
 
 
+---------------------------
 Add SDK tools directory in PATH environment variable to make executable available globally.
 Add below line either in `~/.bashrc` or `~/.profile` file to make it permanent.
 
@@ -49,10 +51,13 @@ Example:
 **NOTE**: _well in first attempt sdkmanager command didnt found for me 
 So I closed the terminal and reopened it_
 
+
+------------------------------
 After that use the sdkmanager to list and install the packages needed:
 
 `sdkmanager "platform-tools" "platforms;android-27" "build-tools;27.0.3"`
 
+-----------------------------
 The final, complete ANDROID_HOME directory structure should look like below,
 consist of quite a few sub-directories: 
 
@@ -63,6 +68,7 @@ all resides inside the parent ANDROID_HOME.
 Hence Sdkmanager path is already set it will be accessible from anywhere:
 `sdkmanager --version`
 
+-------------------------------
 In case sdkmanager is not working, try this
 
 `cd android-sdk/cmdline-tools/tools/bin`
