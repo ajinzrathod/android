@@ -1,13 +1,13 @@
 #### Open Link: https://developer.android.com/studio#command-tools
 
 I am installing command line tools in $HOME directory but it is not mandatory
-
+```
   cd ~
-  mkdir android-sdk
-  cd android-sdk
-  mkdir cmdline-tools
-  cd cmdline-tools
-
+mkdir android-sdk
+cd android-sdk
+mkdir cmdline-tools
+cd cmdline-tools
+```
 ---------------------------
 **sdkmanager lives inside** `cmdline-tools/tools/bin`
 
@@ -30,19 +30,21 @@ the other packages will be placed under `ANDROID_HOME`, but not under `cmdline-t
 Add SDK tools directory in PATH environment variable to make executable available globally.
 Add below line either in `~/.bashrc` or `~/.profile` file to make it permanent.
 
+> vim ~/.bashrc
 
-`vim ~/.bashrc`
+```
 
-> export ANDROID_HOME=/home/"user"/android-sdk
+export ANDROID_HOME=/home/"user"/android-sdk
 
-> export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
+export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
 
-Example:
-> export ANDROID_HOME=/home/ajinzrathod/android-sdk/
+export ANDROID_HOME=/home/ajinzrathod/android-sdk/
 
-> export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin/:$ANDROID_HOME/platform-tools/
+export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin/:$ANDROID_HOME/platform-tools/
 
-`cd android-sdk`
+```
+Now got to android-sdk: `cd android-sdk`
+
 
 **NOTE**: _well in first attempt sdkmanager command didnt found for me 
 So I closed the terminal and reopened it_
@@ -67,9 +69,11 @@ Hence Sdkmanager path is already set it will be accessible from anywhere:
 -------------------------------
 In case sdkmanager is not working, try this
 
-`cd android-sdk/cmdline-tools/tools/bin`
+```
+cd android-sdk/cmdline-tools/tools/bin
 
-`./sdkmanager --version`
+./sdkmanager --version
+```
 
 **OUTPUT-DEMO:** 
 
