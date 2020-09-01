@@ -35,11 +35,8 @@ Add below line either in `~/.bashrc` or `~/.profile` file to make it permanent.
 ```
 
 export ANDROID_HOME=/home/"user"/android-sdk
-
 export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
-
 export ANDROID_HOME=/home/ajinzrathod/android-sdk/
-
 export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin/:$ANDROID_HOME/platform-tools/
 
 ```
@@ -71,7 +68,6 @@ In case sdkmanager is not working, try this
 
 ```
 cd android-sdk/cmdline-tools/tools/bin
-
 ./sdkmanager --version
 ```
 
@@ -79,4 +75,4 @@ cd android-sdk/cmdline-tools/tools/bin
 
 4.0.1
 
-If `./sdkmanager` is NOT working, there are issues setting the path
+If `./sdkmanager` is working, but `sdkmanager` is NOT working, the issue is with the PATH
