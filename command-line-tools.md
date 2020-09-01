@@ -2,7 +2,7 @@
 
 I am installing command line tools in $HOME directory but it is not mandatory
 ```
-  cd ~
+cd ~
 mkdir android-sdk
 cd android-sdk
 mkdir cmdline-tools
@@ -14,10 +14,9 @@ cd cmdline-tools
 
 When you click on any "SDK tool package" of any OS,
 you will find something like this:
+
 `commandlinetools-linux-6609375_latest.zip`
-
 `wget https://dl.google.com/android/repository/<commandlinetools-linux-*.zip>`
-
 `unzip <commandlinetools-linux-*.zip>`
 
 
@@ -30,15 +29,13 @@ the other packages will be placed under `ANDROID_HOME`, but not under `cmdline-t
 Add SDK tools directory in PATH environment variable to make executable available globally.
 Add below line either in `~/.bashrc` or `~/.profile` file to make it permanent.
 
-> vim ~/.bashrc
+Type: `vim ~/.bashrc`
 
 ```
-
 export ANDROID_HOME=/home/"user"/android-sdk
 export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
 export ANDROID_HOME=/home/ajinzrathod/android-sdk/
 export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin/:$ANDROID_HOME/platform-tools/
-
 ```
 Now got to android-sdk: `cd android-sdk`
 
