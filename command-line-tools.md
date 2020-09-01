@@ -2,15 +2,11 @@
 
 I am installing command line tools in $HOME directory but it is not mandatory
 
-`cd ~`
-
-`mkdir android-sdk`
-
-`cd android-sdk`
-
-`mkdir cmdline-tools`
-
-`cd cmdline-tools`
+  cd ~
+  mkdir android-sdk
+  cd android-sdk
+  mkdir cmdline-tools
+  cd cmdline-tools
 
 ---------------------------
 **sdkmanager lives inside** `cmdline-tools/tools/bin`
@@ -37,7 +33,7 @@ Add below line either in `~/.bashrc` or `~/.profile` file to make it permanent.
 
 `vim ~/.bashrc`
 
-> export ANDROID_HOME=/home/<user>/android-sdk
+> export ANDROID_HOME=/home/"user"/android-sdk
 
 > export PATH=${PATH}:$ANDROID_HOME/cmdline-tools/tools/bin:$ANDROID_HOME/platform-tools
 
@@ -76,6 +72,7 @@ In case sdkmanager is not working, try this
 `./sdkmanager --version`
 
 **OUTPUT-DEMO:** 
+
 4.0.1
 
 If `./sdkmanager` is NOT working, there are issues setting the path
