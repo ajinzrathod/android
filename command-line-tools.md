@@ -17,8 +17,12 @@ cd cmdline-tools
 When you click on any "SDK tool package" of any OS,
 you will find something like this:
 
+
+`commandlinetools-linux-6609375_latest.zip`
+
+Open Terminal and Write
+
 ```
-commandlinetools-linux-6609375_latest.zip
 wget https://dl.google.com/android/repository/<commandlinetools-linux-*.zip>
 unzip <commandlinetools-linux-*.zip>
 ```
