@@ -33,4 +33,4 @@ Error while Launching activity
 
 * It worked perfectly after clicking on settings => `Apps & notification` => `App info` => " **find the name of the app**" => "on top right corner **click on the three dots**"" => `Uninstall for all users`
 
-* [Source] (https://stackoverflow.com/questions/35330756/android-application-error-while-running-the-application/41646204)
+* [Source](https://stackoverflow.com/questions/35330756/android-application-error-while-running-the-application/41646204)
