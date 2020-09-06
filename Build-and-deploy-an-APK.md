@@ -18,7 +18,7 @@ The "Debug" part in the above task names is just a camel-case version of the bui
 
 ## If error occurs or Application is not shown in App Launcher
 
-### If you are running the Application from **Android Development Studio** and it shows
+* If you are running the Application from **Android Development Studio** and it shows
 ```
 Error while executing am start -n ....
 ...
@@ -27,7 +27,9 @@ Error while Launching activity
 
 **OR**
 
-### If the Application is not shown in App Launcher of your device.
+* If the Application is not shown in App Launcher of your device.
+
+#### Solution
 
 * The error occurs when you delete the app when you are still testing it on your phone. The app shows as deleted because it disappears from your launcher, To fully delete the app follow the steps below.
 
